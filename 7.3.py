@@ -1,4 +1,3 @@
-from months import month
-
-month_number = 7
-print(f"The name of month {month_number} is {month(month_number)}")
+import months
+x=int(input("Enter month number: "))
+print(f"The name of the month number {x} is {months.month(x)}")

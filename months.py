@@ -1,10 +1,10 @@
-# months.py
-
 def month(n):
-    if n==1:
-        return "January"
+    if n>12:
+        return "It's not a valid number"
+    elif n==1:
+       return "January"
     elif n==2:
-        return "February"
+       return "February"
     elif n==3:
         return "March"
     elif n==4:
@@ -20,10 +20,15 @@ def month(n):
     elif n==9:
         return "September"
     elif n==10:
-        return "October"
+        return "Octorber"
     elif n==11:
         return "November"
     elif n==12:
-        return "December"
-    else:
-        return "Invalid month number. Please provide a number between 1 and 12."
+        return  "December"
+    
+def main():
+    for i in range (1,14):
+        print(month(i))
+
+if __name__=="__main__":
+    main()
